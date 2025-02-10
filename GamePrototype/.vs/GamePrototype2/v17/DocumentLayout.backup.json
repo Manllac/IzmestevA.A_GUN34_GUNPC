@@ -1,0 +1,493 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|c:\\users\\user\\desktop\\master\\gameprototype\\gameprototype2\\units\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|solutionrelative:gameprototype2\\units\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\DungeonBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\DungeonBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|c:\\users\\user\\desktop\\master\\gameprototype\\gameprototype2\\items\\equipitems\\equipitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|solutionrelative:gameprototype2\\items\\equipitems\\equipitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|c:\\users\\user\\desktop\\master\\gameprototype\\gameprototype2\\items\\equipitems\\armour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|solutionrelative:gameprototype2\\items\\equipitems\\armour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EquipItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\EquipItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\gameprototype2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED52016-8487-43C5-BBF5-4A5EB8740105}|GamePrototype2\\GamePrototype2.csproj|solutionrelative:gameprototype2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\GameLoop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\GameLoop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\HardUnitFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\HardUnitFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\UnitFactoryBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\UnitFactoryBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EasyUnitFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\EasyUnitFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Orc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Orc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Grindstone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Grindstone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\RangeWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\RangeWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\UnitFactoryDemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\UnitFactoryDemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\GameConstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\GameConstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\RockPaperScissors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\RockPaperScissors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Helmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Helmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EquipSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\EquipSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\HelfPotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\HelfPotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Gold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Gold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EconomicItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\EconomicItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\Direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\DangeonRoom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\DangeonRoom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\CombatManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GamePrototype2\\CombatManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Armour.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Items\\EquipItems\\Armour.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Items\\EquipItems\\Armour.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Items\\EquipItems\\Armour.cs",
+              "RelativeToolTip": "GamePrototype2\\Items\\EquipItems\\Armour.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T14:49:50.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EquipItem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Items\\EquipItems\\EquipItem.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Items\\EquipItems\\EquipItem.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Items\\EquipItems\\EquipItem.cs",
+              "RelativeToolTip": "GamePrototype2\\Items\\EquipItems\\EquipItem.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T14:48:26.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DungeonBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\DungeonBuilder.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\DungeonBuilder.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\DungeonBuilder.cs",
+              "RelativeToolTip": "GamePrototype2\\DungeonBuilder.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:23:33.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameLoop.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\GameLoop.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\GameLoop.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\GameLoop.cs",
+              "RelativeToolTip": "GamePrototype2\\GameLoop.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:26:38.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Units\\Player.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Units\\Player.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Units\\Player.cs",
+              "RelativeToolTip": "GamePrototype2\\Units\\Player.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:32:15.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EquipItem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EquipItem.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\EquipItem.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EquipItem.cs",
+              "RelativeToolTip": "GamePrototype2\\EquipItem.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:25:11.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HardUnitFactory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\HardUnitFactory.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\HardUnitFactory.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\HardUnitFactory.cs",
+              "RelativeToolTip": "GamePrototype2\\HardUnitFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:52:19.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitFactoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\UnitFactoryBase.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\UnitFactoryBase.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\UnitFactoryBase.cs",
+              "RelativeToolTip": "GamePrototype2\\UnitFactoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:56:00.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EasyUnitFactory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EasyUnitFactory.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\EasyUnitFactory.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EasyUnitFactory.cs",
+              "RelativeToolTip": "GamePrototype2\\EasyUnitFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:56:56.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Orc.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Orc.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Orc.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Orc.cs",
+              "RelativeToolTip": "GamePrototype2\\Orc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:57:38.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Goblin.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Goblin.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Goblin.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Goblin.cs",
+              "RelativeToolTip": "GamePrototype2\\Goblin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:29:16.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Grindstone.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Grindstone.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Grindstone.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Grindstone.cs",
+              "RelativeToolTip": "GamePrototype2\\Grindstone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:30:05.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RangeWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\RangeWeapon.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\RangeWeapon.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\RangeWeapon.cs",
+              "RelativeToolTip": "GamePrototype2\\RangeWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:32:42.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UnitFactoryDemo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\UnitFactoryDemo.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\UnitFactoryDemo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\UnitFactoryDemo.cs",
+              "RelativeToolTip": "GamePrototype2\\UnitFactoryDemo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:34:00.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\GameConstants.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\GameConstants.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\GameConstants.cs",
+              "RelativeToolTip": "GamePrototype2\\GameConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:26:16.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RockPaperScissors.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\RockPaperScissors.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\RockPaperScissors.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\RockPaperScissors.cs",
+              "RelativeToolTip": "GamePrototype2\\RockPaperScissors.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:33:04.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Helmet.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Helmet.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Helmet.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Helmet.cs",
+              "RelativeToolTip": "GamePrototype2\\Helmet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:33:34.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EquipSlot.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EquipSlot.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\EquipSlot.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EquipSlot.cs",
+              "RelativeToolTip": "GamePrototype2\\EquipSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:25:38.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Weapon.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Weapon.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Weapon.cs",
+              "RelativeToolTip": "GamePrototype2\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:34:22.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Inventory.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Inventory.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Inventory.cs",
+              "RelativeToolTip": "GamePrototype2\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:31:16.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Item.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Item.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Item.cs",
+              "RelativeToolTip": "GamePrototype2\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:31:41.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HelfPotion.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\HelfPotion.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\HelfPotion.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\HelfPotion.cs",
+              "RelativeToolTip": "GamePrototype2\\HelfPotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:30:42.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Program.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Program.cs",
+              "RelativeToolTip": "GamePrototype2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:17:47.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Unit.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Unit.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Unit.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Unit.cs",
+              "RelativeToolTip": "GamePrototype2\\Unit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:33:25.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Gold.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Gold.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Gold.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Gold.cs",
+              "RelativeToolTip": "GamePrototype2\\Gold.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:29:34.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EconomicItem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EconomicItem.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\EconomicItem.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\EconomicItem.cs",
+              "RelativeToolTip": "GamePrototype2\\EconomicItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:24:31.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Direction.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\Direction.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\Direction.cs",
+              "RelativeToolTip": "GamePrototype2\\Direction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:20:31.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DangeonRoom.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\DangeonRoom.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\DangeonRoom.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\DangeonRoom.cs",
+              "RelativeToolTip": "GamePrototype2\\DangeonRoom.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:24:01.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CombatManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\CombatManager.cs",
+              "RelativeDocumentMoniker": "GamePrototype2\\CombatManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Master\\GamePrototype\\GamePrototype2\\CombatManager.cs",
+              "RelativeToolTip": "GamePrototype2\\CombatManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T06:19:57.279Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
