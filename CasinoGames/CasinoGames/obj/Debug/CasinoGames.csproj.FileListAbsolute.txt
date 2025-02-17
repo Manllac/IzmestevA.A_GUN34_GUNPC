@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\obj\Debug\CasinoGames.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\obj\Debug\CasinoGames.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\bin\Debug\CasinoGames.exe.config
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\bin\Debug\CasinoGames.exe
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\bin\Debug\CasinoGames.pdb
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\obj\Debug\CasinoGames.exe
+C:\Users\User\Desktop\Нетология\CasinoGames\CasinoGames\obj\Debug\CasinoGames.pdb
