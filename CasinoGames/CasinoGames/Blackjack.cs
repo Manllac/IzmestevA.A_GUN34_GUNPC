@@ -7,39 +7,92 @@ namespace CasinoGame
     public class Blackjack : CasinoGameBase
     {
         private Player _player;
-        private List<Card> _deck;
+        private Queue<Card> _deck;
         private int _bet;
 
-        public Blackjack(Player player, int bet)
+        public Blackjack(Player player, int bet, int numberOfCards = 52)
         {
             _player = player;
             _bet = bet;
-            FactoryMethod(); 
+            FactoryMethod();
         }
-
         public override void PlayGame()
         {
-            int playerScore = _deck.Take(2).Sum(card => card.Value);
-            int computerScore = _deck.Skip(2).Take(2).Sum(card => card.Value);
+            List<Card> playerCards = new List<Card> { _deck.Dequeue(), _deck.Dequeue() };
+            List<Card> computerCards = new List<Card> { _deck.Dequeue(), _deck.Dequeue() };
 
-            Console.WriteLine($"Your score: {playerScore}");
-            Console.WriteLine($"Computer's score: {computerScore}");
+            int playerScore = playerCards.Sum(card => card.Value);
+            int computerScore = computerCards.Sum(card => card.Value);
 
-            if (playerScore > computerScore)
-                OnWinInvoke();
-            else if (playerScore < computerScore)
-                OnLooseInvoke();
+            Console.WriteLine($"Your score: {playerScore} (Cards: {string.Join(", ", playerCards.Select(c => c.ToString()))})");
+            Console.WriteLine($"Computer's score: {computerScore} (Cards: {string.Join(", ", computerCards.Select(c => c.ToString()))})");
+
+            if (playerScore == 21 && computerScore == 21)
+            {
+                OnDrawInvoke();  
+            }
+            else if (playerScore == 21 || computerScore > 21 || playerScore > computerScore)
+            {
+                OnWinInvoke(); 
+            }
+            else if (computerScore == 21 || playerScore > 21 || computerScore > playerScore)
+            {
+                OnLooseInvoke(); 
+            }
             else
-                OnDrawInvoke();
+            {
+                while (playerScore <= 21 && computerScore <= 21 && playerScore == computerScore)
+                {
+                    playerCards.Add(_deck.Dequeue());
+                    computerCards.Add(_deck.Dequeue());
+
+                    playerScore = playerCards.Sum(card => card.Value);
+                    computerScore = computerCards.Sum(card => card.Value);
+
+                    Console.WriteLine($"Your score: {playerScore} (Cards: {string.Join(", ", playerCards.Select(c => c.ToString()))})");
+                    Console.WriteLine($"Computer's score: {computerScore} (Cards: {string.Join(", ", computerCards.Select(c => c.ToString()))})");
+                }
+
+                if (playerScore > 21 || (computerScore <= 21 && computerScore > playerScore))
+                {
+                    OnLooseInvoke();  
+                }
+                else if (computerScore > 21 || playerScore > computerScore)
+                {
+                    OnWinInvoke();  
+                }
+                else
+                {
+                    OnDrawInvoke();  
+                }
+            }
         }
 
         protected override void FactoryMethod()
         {
-            _deck = new List<Card>
+            _deck = new Queue<Card>();
+
+            List<Suit> suits = Enum.GetValues(typeof(Suit)).Cast<Suit>().ToList();
+            List<int> values = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 }; 
+
+            Random random = new Random();
+
+            foreach (var suit in suits)
             {
-                new Card(Suit.Clubs, 10), new Card(Suit.Diamonds, 9), 
-                new Card(Suit.Hearts, 6), new Card(Suit.Spades, 7)
-            };
+                foreach (var value in values)
+                {
+                    _deck.Enqueue(new Card(suit, value));
+                }
+            }
+
+            Shuffle();
+        }
+
+        private void Shuffle()
+        {
+            Random rand = new Random();
+            var shuffledDeck = _deck.OrderBy(c => rand.Next()).ToList();
+            _deck = new Queue<Card>(shuffledDeck); 
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CasinoGame
 {
@@ -19,26 +20,30 @@ namespace CasinoGame
             _player = new Player(profileName, 1000);
             bool gameInProgress = true;
 
+            var games = new Dictionary<string, Action>
+            {
+                { "1", () => PlayBlackjack() },
+                { "2", () => PlayDiceGame() }
+            };
+
             while (gameInProgress)
             {
                 Console.WriteLine($"Your current bank: {_player.Bank}");
-                Console.WriteLine("Choose a game:\n1. Blackjack\n2. Dice game");
-                string choice = Console.ReadLine();
-                if (choice == "1")
+                Console.WriteLine("Choose a game:");
+                foreach (var game in games)
                 {
-                    var game = new Blackjack(_player, 100);
-                    game.OnWin += () => Console.WriteLine("You win!");
-                    game.OnLoose += () => Console.WriteLine("You lose!");
-                    game.OnDraw += () => Console.WriteLine("It's a draw!");
-                    game.PlayGame();
+                    Console.WriteLine($"{game.Key}. Game {game.Key}");
                 }
-                else if (choice == "2")
+
+                string choice = Console.ReadLine();
+
+                if (games.ContainsKey(choice))
                 {
-                    var game = new DiceGame(_player, 100, 2, 1, 6);
-                    game.OnWin += () => Console.WriteLine("You win!");
-                    game.OnLoose += () => Console.WriteLine("You lose!");
-                    game.OnDraw += () => Console.WriteLine("It's a draw!");
-                    game.PlayGame();
+                    games[choice]();  
+                }
+                else
+                {
+                    Console.WriteLine("Invalid choice. Please choose again.");
                 }
 
                 Console.WriteLine("Do you want to play again? (y/n)");
@@ -47,6 +52,24 @@ namespace CasinoGame
 
             SaveProfile();
             Console.WriteLine("Goodbye!");
+        }
+
+        private void PlayBlackjack()
+        {
+            var game = new Blackjack(_player, 100);
+            game.OnWin += () => Console.WriteLine("You win!");
+            game.OnLoose += () => Console.WriteLine("You lose!");
+            game.OnDraw += () => Console.WriteLine("It's a draw!");
+            game.PlayGame();
+        }
+
+        private void PlayDiceGame()
+        {
+            var game = new DiceGame(_player, 100);
+            game.OnWin += () => Console.WriteLine("You win!");
+            game.OnLoose += () => Console.WriteLine("You lose!");
+            game.OnDraw += () => Console.WriteLine("It's a draw!");
+            game.PlayGame();
         }
 
         private string LoadProfile()
@@ -63,7 +86,8 @@ namespace CasinoGame
 
         private void SaveProfile()
         {
-            _saveLoadService.SaveData(_player.Name, "playerProfile");
+            string data = $"{_player.Name}:{_player.Bank}";
+            _saveLoadService.SaveData(data, "playerProfile");
         }
     }
 }

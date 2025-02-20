@@ -1,19 +1,29 @@
 ﻿namespace CasinoGame
 {
-    public struct Card
+    public class Card
     {
-        public readonly Suit Suit;
-        public readonly int Value;
+        public Suit Suit { get; set; }
+        public int Value { get; set; }
 
         public Card(Suit suit, int value)
         {
             Suit = suit;
             Value = value;
         }
+
+        public override string ToString()
+        {
+            return $"{Value} of {Suit}";
+        }
     }
 
+    // Перечисление мастей
     public enum Suit
     {
-        Clubs, Diamonds, Hearts, Spades
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
     }
 }
+

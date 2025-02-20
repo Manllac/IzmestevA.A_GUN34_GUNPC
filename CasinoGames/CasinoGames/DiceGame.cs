@@ -13,10 +13,8 @@ namespace CasinoGame
         private int _maxValue;
         private List<Dice> _dice;
 
-        public DiceGame(Player player, int bet, int diceCount, int minValue, int maxValue)
+        public DiceGame(Player player, int bet, int diceCount = 2, int minValue = 1, int maxValue = 6)
         {
-            _player = player;
-            _bet = bet;
             _diceCount = diceCount;
             _minValue = minValue;
             _maxValue = maxValue;
