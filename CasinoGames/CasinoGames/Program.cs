@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace CasinoGame
 {
@@ -6,7 +7,8 @@ namespace CasinoGame
     {
         static void Main(string[] args)
         {
-            var saveLoadService = new FileSystemSaveLoadService("profile.txt");
+            string dataPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "playerProfile.txt");
+            var saveLoadService = new FileSystemSaveLoadService<Player>(dataPath);
             var casino = new Casino(saveLoadService);
             casino.StartGame();
         }

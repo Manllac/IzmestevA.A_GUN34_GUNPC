@@ -6,14 +6,12 @@ namespace CasinoGame
 {
     public class DiceGame : CasinoGameBase
     {
-        private Player _player;
-        private int _bet;
         private int _diceCount;
         private int _minValue;
         private int _maxValue;
         private List<Dice> _dice;
 
-        public DiceGame(Player player, int bet, int diceCount = 2, int minValue = 1, int maxValue = 6)
+        public DiceGame(Player player, int bet, int diceCount = 2, int minValue = 1, int maxValue = 6) : base(player, bet)
         {
             _diceCount = diceCount;
             _minValue = minValue;

@@ -12,3 +12,6 @@ C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\obj\Debug\CasinoGames.cspro
 C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\obj\Debug\CasinoGames.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\obj\Debug\CasinoGames.exe
 C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\obj\Debug\CasinoGames.pdb
+C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Master\CasinoGames\CasinoGames\obj\Debug\CasinoGa.8005A259.Up2Date

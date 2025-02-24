@@ -6,16 +6,13 @@ namespace CasinoGame
 {
     public class Blackjack : CasinoGameBase
     {
-        private Player _player;
         private Queue<Card> _deck;
-        private int _bet;
 
-        public Blackjack(Player player, int bet, int numberOfCards = 52)
+        public Blackjack(Player player, int bet) : base(player, bet)
         {
-            _player = player;
-            _bet = bet;
             FactoryMethod();
         }
+
         public override void PlayGame()
         {
             List<Card> playerCards = new List<Card> { _deck.Dequeue(), _deck.Dequeue() };
@@ -29,15 +26,15 @@ namespace CasinoGame
 
             if (playerScore == 21 && computerScore == 21)
             {
-                OnDrawInvoke();  
+                OnDrawInvoke();
             }
             else if (playerScore == 21 || computerScore > 21 || playerScore > computerScore)
             {
-                OnWinInvoke(); 
+                OnWinInvoke();
             }
             else if (computerScore == 21 || playerScore > 21 || computerScore > playerScore)
             {
-                OnLooseInvoke(); 
+                OnLooseInvoke();
             }
             else
             {
@@ -55,15 +52,15 @@ namespace CasinoGame
 
                 if (playerScore > 21 || (computerScore <= 21 && computerScore > playerScore))
                 {
-                    OnLooseInvoke();  
+                    OnLooseInvoke();
                 }
                 else if (computerScore > 21 || playerScore > computerScore)
                 {
-                    OnWinInvoke();  
+                    OnWinInvoke();
                 }
                 else
                 {
-                    OnDrawInvoke();  
+                    OnDrawInvoke();
                 }
             }
         }
@@ -73,7 +70,7 @@ namespace CasinoGame
             _deck = new Queue<Card>();
 
             List<Suit> suits = Enum.GetValues(typeof(Suit)).Cast<Suit>().ToList();
-            List<int> values = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 }; 
+            List<int> values = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 };
 
             Random random = new Random();
 
@@ -92,7 +89,7 @@ namespace CasinoGame
         {
             Random rand = new Random();
             var shuffledDeck = _deck.OrderBy(c => rand.Next()).ToList();
-            _deck = new Queue<Card>(shuffledDeck); 
+            _deck = new Queue<Card>(shuffledDeck);
         }
     }
 }

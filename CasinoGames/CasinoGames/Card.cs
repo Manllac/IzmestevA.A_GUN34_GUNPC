@@ -2,8 +2,8 @@
 {
     public class Card
     {
-        public Suit Suit { get; set; }
-        public int Value { get; set; }
+        public Suit Suit { get; }
+        public int Value { get; }
 
         public Card(Suit suit, int value)
         {
@@ -17,7 +17,6 @@
         }
     }
 
-    // Перечисление мастей
     public enum Suit
     {
         Clubs,
@@ -26,4 +25,3 @@
         Spades
     }
 }
-

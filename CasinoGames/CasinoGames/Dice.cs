@@ -11,7 +11,9 @@ namespace CasinoGame
         public Dice(int minValue, int maxValue, Random random)
         {
             if (minValue < 1 || maxValue > int.MaxValue || minValue > maxValue)
-                throw new ArgumentOutOfRangeException(nameof(minValue), "Invalid dice range.");
+            {
+                throw new WrongDiceNumberException("Invalid dice range.");
+            }
 
             _minValue = minValue;
             _maxValue = maxValue;

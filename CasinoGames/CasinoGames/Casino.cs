@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace CasinoGame
 {
     public class Casino : IGame
     {
         private Player _player;
-        private ISaveLoadService<string> _saveLoadService;
+        private ISaveLoadService<Player> _saveLoadService;
 
-        public Casino(ISaveLoadService<string> saveLoadService)
+        public Casino(ISaveLoadService<Player> saveLoadService)
         {
             _saveLoadService = saveLoadService;
         }
@@ -17,29 +16,39 @@ namespace CasinoGame
         {
             Console.WriteLine("Welcome to the Casino!");
             string profileName = LoadProfile();
-            _player = new Player(profileName, 1000);
+            _player = new Player(profileName, 1000); 
             bool gameInProgress = true;
-
-            var games = new Dictionary<string, Action>
-            {
-                { "1", () => PlayBlackjack() },
-                { "2", () => PlayDiceGame() }
-            };
 
             while (gameInProgress)
             {
                 Console.WriteLine($"Your current bank: {_player.Bank}");
                 Console.WriteLine("Choose a game:");
-                foreach (var game in games)
-                {
-                    Console.WriteLine($"{game.Key}. Game {game.Key}");
-                }
+                Console.WriteLine("1. Game 1 (Blackjack)");
+                Console.WriteLine("2. Game 2 (Dice Game)");
 
                 string choice = Console.ReadLine();
 
-                if (games.ContainsKey(choice))
+                if (choice == "1" || choice == "2")
                 {
-                    games[choice]();  
+                    int bet = GetPlayerBet();
+                    if (bet <= 0)
+                    {
+                        Console.WriteLine("Invalid bet. Bet must be greater than 0. Please try again.");
+                        continue;
+                    }
+
+                    try
+                    {
+                        if (choice == "1")
+                            PlayBlackjack(bet);
+                        else
+                            PlayDiceGame(bet);
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        break;
+                    }
                 }
                 else
                 {
@@ -47,25 +56,36 @@ namespace CasinoGame
                 }
 
                 Console.WriteLine("Do you want to play again? (y/n)");
-                if (Console.ReadLine().ToLower() != "y") break;
+                if (Console.ReadLine().ToLower() != "y") gameInProgress = false;
             }
 
             SaveProfile();
             Console.WriteLine("Goodbye!");
         }
 
-        private void PlayBlackjack()
+        private int GetPlayerBet()
         {
-            var game = new Blackjack(_player, 100);
+            Console.WriteLine($"Enter your bet (max: {_player.Bank}):");
+            string input = Console.ReadLine();
+            if (int.TryParse(input, out int bet) && bet > 0 && bet <= _player.Bank)
+            {
+                return bet;
+            }
+            return -1; 
+        }
+
+        private void PlayBlackjack(int bet)
+        {
+            var game = new Blackjack(_player, bet);
             game.OnWin += () => Console.WriteLine("You win!");
             game.OnLoose += () => Console.WriteLine("You lose!");
             game.OnDraw += () => Console.WriteLine("It's a draw!");
             game.PlayGame();
         }
 
-        private void PlayDiceGame()
+        private void PlayDiceGame(int bet)
         {
-            var game = new DiceGame(_player, 100);
+            var game = new DiceGame(_player, bet);
             game.OnWin += () => Console.WriteLine("You win!");
             game.OnLoose += () => Console.WriteLine("You lose!");
             game.OnDraw += () => Console.WriteLine("It's a draw!");
@@ -74,20 +94,24 @@ namespace CasinoGame
 
         private string LoadProfile()
         {
-            string profileName = _saveLoadService.LoadData("playerProfile");
-            if (string.IsNullOrEmpty(profileName))
+            Player profile = _saveLoadService.LoadData("playerProfile");
+            Console.WriteLine($"Raw profile loaded: {Newtonsoft.Json.JsonConvert.SerializeObject(profile)}");
+            if (profile == null)
             {
                 Console.WriteLine("Enter your name:");
-                profileName = Console.ReadLine();
-                _saveLoadService.SaveData(profileName, "playerProfile");
+                string profileName = Console.ReadLine();
+                return profileName;
             }
-            return profileName;
+            _player = profile;
+            Console.WriteLine($"Loaded profile: Name = {_player.Name}, Bank = {_player.Bank}");
+            return _player.Name;
         }
 
         private void SaveProfile()
         {
-            string data = $"{_player.Name}:{_player.Bank}";
-            _saveLoadService.SaveData(data, "playerProfile");
+            Console.WriteLine($"Saving profile before write: Name = {_player.Name}, Bank = {_player.Bank}");
+            _saveLoadService.SaveData(_player, "playerProfile");
+            Console.WriteLine($"Profile saved successfully.");
         }
     }
 }
