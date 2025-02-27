@@ -2,27 +2,32 @@
 
 namespace CasinoGame
 {
-    public class Dice
+    public struct Dice
     {
-        private Random _random;
-        private int _minValue;
-        private int _maxValue;
+        private readonly int _number;
+        private readonly int _min;
+        private readonly int _max;
 
-        public Dice(int minValue, int maxValue, Random random)
+        public int Number { get { return _number; } }
+        public int Min { get { return _min; } }
+        public int Max { get { return _max; } }
+
+        public Dice(int min, int max)
         {
-            if (minValue < 1 || maxValue > int.MaxValue || minValue > maxValue)
+            if (min < 1 || max > int.MaxValue || min > max)
             {
-                throw new WrongDiceNumberException("Invalid dice range.");
+                throw new WrongDiceNumberException("Invalid dice range. Min must be >= 1, Max must be <= int.MaxValue, and Min must be <= Max.");
             }
 
-            _minValue = minValue;
-            _maxValue = maxValue;
-            _random = random;
+            _min = min;
+            _max = max;
+            Random random = new Random();
+            _number = random.Next(min, max + 1); 
         }
 
         public int Roll()
         {
-            return _random.Next(_minValue, _maxValue + 1);
+            return _number;
         }
     }
 }

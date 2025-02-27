@@ -20,13 +20,12 @@ namespace CasinoGame
             FactoryMethod();
         }
 
+       
         protected override void FactoryMethod()
         {
-            Random random = new Random();
-
             for (int i = 0; i < _diceCount; i++)
             {
-                _dice.Add(new Dice(_minValue, _maxValue, random));
+                _dice.Add(new Dice(_minValue, _maxValue));
             }
         }
 

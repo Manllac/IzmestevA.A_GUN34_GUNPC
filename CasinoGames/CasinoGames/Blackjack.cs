@@ -18,8 +18,8 @@ namespace CasinoGame
             List<Card> playerCards = new List<Card> { _deck.Dequeue(), _deck.Dequeue() };
             List<Card> computerCards = new List<Card> { _deck.Dequeue(), _deck.Dequeue() };
 
-            int playerScore = playerCards.Sum(card => card.Value);
-            int computerScore = computerCards.Sum(card => card.Value);
+            int playerScore = playerCards.Sum(card => (int)card.Value); 
+            int computerScore = computerCards.Sum(card => (int)card.Value); 
 
             Console.WriteLine($"Your score: {playerScore} (Cards: {string.Join(", ", playerCards.Select(c => c.ToString()))})");
             Console.WriteLine($"Computer's score: {computerScore} (Cards: {string.Join(", ", computerCards.Select(c => c.ToString()))})");
@@ -43,8 +43,8 @@ namespace CasinoGame
                     playerCards.Add(_deck.Dequeue());
                     computerCards.Add(_deck.Dequeue());
 
-                    playerScore = playerCards.Sum(card => card.Value);
-                    computerScore = computerCards.Sum(card => card.Value);
+                    playerScore = playerCards.Sum(card => (int)card.Value); 
+                    computerScore = computerCards.Sum(card => (int)card.Value);
 
                     Console.WriteLine($"Your score: {playerScore} (Cards: {string.Join(", ", playerCards.Select(c => c.ToString()))})");
                     Console.WriteLine($"Computer's score: {computerScore} (Cards: {string.Join(", ", computerCards.Select(c => c.ToString()))})");
@@ -64,13 +64,18 @@ namespace CasinoGame
                 }
             }
         }
-
         protected override void FactoryMethod()
         {
             _deck = new Queue<Card>();
 
-            List<Suit> suits = Enum.GetValues(typeof(Suit)).Cast<Suit>().ToList();
-            List<int> values = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 };
+            List<Suit> suits = new List<Suit>
+    {
+        Suit.Clubs,
+        Suit.Diamonds,
+        Suit.Hearts,
+        Suit.Spades
+    };
+            List<CardValue> values = Enum.GetValues(typeof(CardValue)).Cast<CardValue>().ToList(); 
 
             Random random = new Random();
 

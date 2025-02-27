@@ -1,19 +1,22 @@
 ﻿namespace CasinoGame
 {
-    public class Card
+    public struct Card
     {
-        public Suit Suit { get; }
-        public int Value { get; }
+        private readonly Suit _suit;
+        private readonly CardValue _value;
 
-        public Card(Suit suit, int value)
+        public Suit Suit { get { return _suit; } }
+        public CardValue Value { get { return _value; } }
+
+        public Card(Suit suit, CardValue value)
         {
-            Suit = suit;
-            Value = value;
+            _suit = suit;
+            _value = value;
         }
 
         public override string ToString()
         {
-            return $"{Value} of {Suit}";
+            return $"{_value} of {_suit}";
         }
     }
 
@@ -23,5 +26,18 @@
         Diamonds,
         Hearts,
         Spades
+    }
+
+    public enum CardValue
+    {
+        Six = 6,
+        Seven = 7,
+        Eight = 8,
+        Nine = 9,
+        Ten = 10,
+        Jack = 10,  
+        Queen = 10, 
+        King = 10,  
+        Ace = 11   
     }
 }
